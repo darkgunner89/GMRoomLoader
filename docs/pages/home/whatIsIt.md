@@ -7,7 +7,7 @@ GMRoomLoader is an award-winning [Free and Open Source](https://en.wikipedia.org
 Design levels across multiple rooms and combine them seamlessly during gameplay. Build procedural dungeons, chunked open worlds, endless runners, and more.
 
 - ℹ️ Download the `.yymps` local package from the [latest release](https://github.com/glebtsereteli/GMRoomLoader/releases/latest/) page.
-- ℹ️ Refer to the [Documentation](https://glebtsereteli.github.io/GMRoomLoader/) for installation instructions, usage examples, and full API reference.
+- ℹ️ Refer to this documentation website to [Get Started](/pages/home/gettingStarted/gettingStarted) with the library, see usage examples and full [API reference](/pages/api/overview.md).
 
 ::: warning DISCLAIMER
 GMRoomLoader is designed specifically for __loading room contents__.
@@ -34,7 +34,7 @@ It does not provide tools for procedural generation or level layout creation of 
 
 GMRoomLoader works by calling :room_get_info(): to grab the raw data of a room, parsing that data, optimizing it for loading, and then rebuilding room layers and elements when you use its :Loading: methods.
 
-GameMaker can only have a single room active at a time and GMRoomLoader doesn't magically change that. Instead, it recreates the contents of other rooms inside the current room.
+GameMaker can only have a single room active at a time and GMRoomLoader doesn't change that. Instead, it recreates the contents of other "loaded" rooms inside the current, "host" room, which effectively sidesteps the limitation.
 
 ## GameMaker Awards!
 GMRoomLoader [won in the Best Tool category](https://gamemaker.io/en/blog/gamemaker-awards-2025) at the GameMaker Awards after being nominated two years in a row in both [2024](https://gamemaker.io/en/blog/gamemaker-awards-2024-winners) and [2025](https://gamemaker.io/en/blog/gamemaker-awards-2025)!
@@ -59,3 +59,13 @@ GMRoomLoader [won in the Best Tool category](https://gamemaker.io/en/blog/gamema
 - Project Reality: Shattered by BrewerTheGreater.
 
 And more to come! If you've built something with GMRoomLoader and would like it listed here, feel free to share it with me! 🙂
+
+## Credits
+
+- Created and maintained by [Gleb Tsereteli](https://twitter.com/glebtsereteli).
+- Logo by [neerikiffu](https://bsky.app/profile/neerikiffu.bsky.social).
+- Additional art and demo rooms designed by my wife [Kate](https://www.linkedin.com/in/kate-ivanova22/) ❣️
+- Motivated by and made for [TabularElf](https://tabelf.link/)'s [Cookbook Jam #1](https://itch.io/jam/cookbook-jam-1).
+- Thank you to [YellowAfterlife](https://yal.cc/) for inspiring this library with his OG [GMRoomPack](https://yellowafterlife.itch.io/gmroompack), various help and ideas.
+- Thank you to [Topher Anselmo](https://topheranselmo.com/) for inspiration and help with [VitePress](https://vitepress.dev/)-based documentation.
+- Demo art by [Kenney](https://kenney.nl) the ✨*Asset Jesus*✨.

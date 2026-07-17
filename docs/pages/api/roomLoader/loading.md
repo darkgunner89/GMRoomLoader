@@ -249,7 +249,7 @@ This process can noticeably impact performance, especially for large tilemaps. T
 | `[targetLayer]` | :Id.Layer: or :String: | The target layer to create the tilemap on [Default: `sourceLayerName`] |
 | `[xOrigin]` | :Real: | The x origin to load the tilemap at <br> [Default: :State.XOrigin: if set, or :ROOMLOADER_DEFAULT_XORIGIN:] |
 | `[yOrigin]` | :Real: | The y origin to load the tilemap at <br> [Default: :State.YOrigin: if set, or :ROOMLOADER_DEFAULT_YORIGIN:] |
-| `[mirror]` | :Bool: | Mirror the loaded tilemap? <br> [Default: (:State.XScale: `< 0`): if set, `false` otherwise] |
+| `[mirror]` | :Bool: | Mirror the loaded tilemap? <br> [Default: (:State.XScale: `< 0`) if set, `false` otherwise] |
 | `[flip]` | :Bool: | Flip the loaded tilemap? <br> [Default: (:State.YScale: `< 0`) if set, `false` otherwise] |
 | `[angle]` | :Real: | The angle to load the tilemap at <br> [Default: :State.Angle: if set, or `0`] |
 | `[tileset]` | :Asset.GMTileset: | The tileset to use for the tilemap <br> [Default: :State.Tileset: if set, or source tileset] |
@@ -311,7 +311,7 @@ collisionTilemap = RoomLoader
 
 ### Variable Definitions
 
-While using instance [Variable Definitions](https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Object_Variables.htm) is [fully supported](/pages/home/faq#my-rooms-have-instances-with-variable-definitions-and-creation-code-does-gmroomloader-support-those), not all built-in instance variables can be used as values inside the Variable Definitions panel (e.g. you can't reference `x` or `y`).
+While using instance [Variable Definitions](https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Object_Variables.htm) is [fully supported](/pages/help/faq#my-rooms-have-instances-with-variable-definitions-and-creation-code-does-gmroomloader-support-those), not all built-in instance variables can be used as values inside the Variable Definitions panel (e.g. you can't reference `x` or `y`).
 
 This is because GMRoomLoader initializes VarDefs *before* the instance itself exists. All provided variables are baked into a preCreate struct, which is later passed to the created instance. Since the instance does not yet exist at that point, built-in variables are inaccessible.
 

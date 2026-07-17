@@ -14,7 +14,7 @@
 
 As mentioned in the [First Setup](/pages/home/gettingStarted/gettingStarted/#first-setup) section of [Getting Started](/pages/home/gettingStarted/gettingStarted), this is a simple project demonstrating how to load a room centered at the mouse coordinates when pressing 1 and unload it when pressing 2.
 
-> ℹ️ Download the [GMRoomLoader First Setup.yyz](https://github.com/glebtsereteli/GMRoomLoader/releases/latest/download/GMRoomLoader.First.Setup.yyz) example project.
+> ℹ️ Download the [GMRoomLoader First Setup.yyz](https://github.com/glebtsereteli/GMRoomLoader/releases/latest/download/GMRoomLoader.v3.1.1.First.Setup.yyz) example project.
 
 <div style="width: 100%; max-width: 100%;">
   <video style="width: 100%; height: auto;" controls>
@@ -26,7 +26,7 @@ As mentioned in the [First Setup](/pages/home/gettingStarted/gettingStarted/#fir
 
 GMRoomLoader comes with a demo project showcasing all core features of the library. The demo includes a DBG ImGui control panel with demo cycling and custom controls for each example.
 
-> ℹ️ Download the [GMRoomLoader Demo.yyz](https://github.com/glebtsereteli/GMRoomLoader/releases/latest/download/GMRoomLoader.Demo.yyz) project.
+> ℹ️ Download the [GMRoomLoader Demo.yyz](https://github.com/glebtsereteli/GMRoomLoader/releases/latest/download/GMRoomLoader.v3.1.1.Demo.yyz) project.
 
 ---
 ### General
@@ -64,7 +64,9 @@ This is an example of using :RoomLoader.LoadTilemap(): to load Tilemaps, with co
 ---
 ### Merge Tilemaps
 
-This is an example of merging existing and loaded tilemaps when loading :Full Rooms: or :Tilemaps:. The existing tilemap is repositioned and resized to fit loaded tilemaps. See the :ROOMLOADER_MERGE_TILEMAPS: config macro for detailed info.
+This is an example of merging existing and loaded tilemaps when loading :Full Rooms: or :Tilemaps:. The existing tilemap is repositioned and resized to fit loaded tilemaps.
+
+See :ROOMLOADER_MERGE_LAYERS: and :ROOMLOADER_MERGE_TILEMAPS: config macros for more info.
 
 <div style="width: 100%; max-width: 100%;">
   <video style="width: 100%; height: auto;" controls>

@@ -48,12 +48,12 @@ GMRoomLoader [won in the Best Tool category](https://gamemaker.io/en/blog/gamema
 
 # Credits
 - Created and maintained by [Gleb Tsereteli](https://twitter.com/glebtsereteli).
-- Graphics and demo rooms designed by my wifey [Kate](https://www.instagram.com/k8te_iv) ❣️
-- Wonderful logo by the very talented [neerikiffu](https://bsky.app/profile/neerikiffu.bsky.social).
+- Logo by [neerikiffu](https://bsky.app/profile/neerikiffu.bsky.social).
+- Additional art and demo rooms designed by my wife [Kate](https://www.linkedin.com/in/kate-ivanova22/) ❣️
 - Originally motivated by and made for [TabularElf](https://tabelf.link/)'s [Cookbook Jam #1](https://itch.io/jam/cookbook-jam-1).
-- Thank you to [Vadym/YellowAfterlife](https://yal.cc/) for inspiring this library with his OG [GMRoomPack](https://yellowafterlife.itch.io/gmroompack), various help and ideas.
-- Thank you to [Topher Anselmo](https://topheranselmo.com/) for inspiration and help with the [VitePress](https://vitepress.dev/)-based documentation.
-- Demo art by [Kenney](https://kenney.nl/) the ✨*Asset Jesus*✨.
+- Thank you to [YellowAfterlife](https://yal.cc/) for inspiring this library with his OG [GMRoomPack](https://yellowafterlife.itch.io/gmroompack), various help and ideas.
+- Thank you to [Topher Anselmo](https://topheranselmo.com/) for inspiration and help with [VitePress](https://vitepress.dev/)-based documentation.
+- Demo art by [Kenney](https://kenney.nl) the ✨*Asset Jesus*✨.
 
 # Games Using GMRoomLoader
 - [Juju Adams](https://www.jujuadams.com/)' undisclosed [commercial games](https://www.reddit.com/r/gamemaker/comments/1nn84b9/comment/nfjy5v4/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
