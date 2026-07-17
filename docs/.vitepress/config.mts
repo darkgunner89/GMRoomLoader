@@ -4,7 +4,7 @@ import MarkdownIt from 'markdown-it'
 export default defineConfig({
   base: '/GMRoomLoader/',
   cleanUrls: true,
-  
+  ignoreDeadLinks: true,
   lastUpdated: true,
 
   title: "GMRoomLoader",
