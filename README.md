@@ -20,7 +20,7 @@ var _chunk = script_execute_ext(choose, tag_get_asset_ids("DungeonChunk", asset_
 payload = RoomLoader.MiddleCenter().Mirror(choose(true, false)).Load(_chunk, x, y);
 
 // Screenshot the boss room's tilemaps and sprites into a sprite for a level select menu
-bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmLevelBoss);
+bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmBoss);
 ```
 
 - ℹ️ Download the `.yymps` local package from the [latest release](https://github.com/glebtsereteli/GMRoomLoader/releases/latest/) page.
