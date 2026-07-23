@@ -11,6 +11,18 @@ GMRoomLoader is an award-winning [Free and Open Source](https://en.wikipedia.org
 
 Design levels across multiple rooms and combine them seamlessly during gameplay. Build procedural dungeons, chunked open worlds, endless runners, and more.
 
+```js
+// Load a room at the mouse position
+RoomLoader.Load(rmLevel, mouse_x, mouse_y);
+
+// Load a random dungeon chunk, centered and mirrored at random. Store the payload to clean up later
+var _chunk = script_execute_ext(choose, tag_get_asset_ids("DungeonChunk", asset_room));
+payload = RoomLoader.MiddleCenter().Mirror(choose(true, false)).Load(_chunk, x, y);
+
+// Screenshot the boss room's tilemaps and sprites into a sprite for a level select menu
+bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmLevelBoss);
+```
+
 - ℹ️ Download the `.yymps` local package from the [latest release](https://github.com/glebtsereteli/GMRoomLoader/releases/latest/) page.
 - ℹ️ Refer to the [Documentation](https://glebtsereteli.github.io/GMRoomLoader/) for installation instructions, usage examples, and full API reference.
 - ℹ️ See the [Getting Started](https://glebtsereteli.github.io/GMRoomLoader/pages/home/gettingStarted/gettingStarted#getting-started) page to load your first room.
