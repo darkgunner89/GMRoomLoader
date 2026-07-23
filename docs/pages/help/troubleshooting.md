@@ -49,6 +49,7 @@ That's a background layer with a solid fill color. GameMaker rooms have one by d
 It's usually a default leftover or an editing backdrop, so you typically don't want to load it in.
 
 ---
+
 ### Remove Background
 
 The simplest, most common fix is to delete the background layer or hide it in the room you're loading.
@@ -92,9 +93,9 @@ You load a room with a tile layer and your collision checks miss it.
 
 A new tilemap gets created on load, and your code is still checking a different tilemap ID.
 
----
-
 There are two ways to handle collision with loaded tilemaps, depending on whether you keep them separate or merge them into an existing tilemap.
+
+---
 
 ### Separate Tilemaps
 
@@ -132,6 +133,36 @@ payload.Cleanup();
 Alternatively, you can make use of :ROOMLOADER_MERGE_LAYERS: and :ROOMLOADER_MERGE_TILEMAPS: to merge loaded tilemaps into existing ones.
 
 That way you don't need to juggle multiple tilemap IDs and can keep using a single tilemap for collision, auto-tiling or any other needs where having a single tilemap is preferable.
+
+## Variable Definitions Crashing
+
+:::danger PROBLEM
+You try loading a room with instances that have custom values in their Variable Definitions and the game crashes on data initialization. You see an error similar to this:
+```
+Variable struct.image_number(30, -2147483648) not set before reading it.
+at gml_RoomCC_rmStartingCave2_1_PreCreate (line 2) - self.startingIndex=image_number - 1;
+```
+:::
+
+Your Variable Definitions reference [built-in instance variables](https://manual.gamemaker.io/lts/en/GameMaker_Language/GML_Reference/Asset_Management/Instances/Instance_Variables/Instance_Variables.htm) like `x`, `y` or `image_number`.
+
+GMRoomLoader bakes modified Variable Definitions into a pre-Create struct that's passed to the instance when it's created. That happens **before the instance exists**, so none of its built-in variables are available at that point.
+
+::: tip NOTE
+This only affects Variable Definitions you've modified in the room editor. Unmodified defaults aren't loaded by GMRoomLoader and initialize normally, so built-in variables are safe to use there.
+:::
+
+---
+
+### Resolve In Create
+
+Keep the variable at a safe default like `undefined` and resolve it in the Create event.
+
+### Use Creation Code
+
+Move the logic to Instance Creation Code. Keep in mind that it runs *after* the Create event.
+
+This is only really needed if you want per-instance overrides in the room editor. Otherwise the Create event solution above is most likely enough.
 
 ## Still Stuck?
 
