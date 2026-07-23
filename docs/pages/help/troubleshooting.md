@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Solutions to problems that come up often. Most of them trace back to how newly created layers from loaded rooms interact with existing layers in host rooms.
+Solutions to problems that come up often. Most of them trace back to how loaded room contents interact with the host room they're loaded into.
 
 ## Nothing Shows Up
 
@@ -134,10 +134,10 @@ Alternatively, you can make use of :ROOMLOADER_MERGE_LAYERS: and :ROOMLOADER_MER
 
 That way you don't need to juggle multiple tilemap IDs and can keep using a single tilemap for collision, auto-tiling or any other needs where having a single tilemap is preferable.
 
-## Variable Definitions Crashing
+## Variable Definitions Crash
 
 :::danger PROBLEM
-You try loading a room with instances that have custom values in their Variable Definitions and the game crashes on data initialization. You see an error similar to this:
+You try loading a room with instances that have custom values in their Variable Definitions and the game crashes with an error similar to this:
 ```
 Variable struct.image_number(30, -2147483648) not set before reading it.
 at gml_RoomCC_rmStartingCave2_1_PreCreate (line 2) - self.startingIndex=image_number - 1;
@@ -163,6 +163,41 @@ Keep the variable at a safe default like `undefined` and resolve it in the Creat
 Move the logic to Instance Creation Code. Keep in mind that it runs *after* the Create event.
 
 This is only really needed if you want per-instance overrides in the room editor. Otherwise the Create event solution above is most likely enough.
+
+## Recursive Loading Crash
+
+:::danger PROBLEM
+You load a room and get a crash saying `PerformEvent recursion depth failure...` error, with a huge stack trace repeating your load call over and over.
+:::
+
+The object doing the loading is placed inside the room it loads.
+
+Loading the room creates a copy of that object, which runs its own load call, which creates another copy, and so on until GameMaker gives up.
+
+:::tip NESTING IS FINE
+This doesn't mean loaded rooms can never contain objects that load other rooms.
+
+That's perfectly fine as long as they load different rooms and the chain eventually terminates instead of looping back on itself.
+:::
+
+---
+
+### Move The Loader
+
+To avoid this entirely, don't place objects that load rooms into any loaded rooms.
+
+Keep your controller in the host room, or make it persistent and create it elsewhere. Make sure it loads rooms that only contain level content.
+
+### Filter The Loader
+
+If the object needs to stay in the room for any reason, exclude it at load time by putting it on its own layer and blacklisting that layer via :Layer Name Filtering::
+
+```js
+RoomLoader.LayerBlacklistAdd("Control").Load(rmLevel, x, y); // [!code highlight]
+
+// Blacklist doesn't reset automatically after loading
+RoomLoader.LayerBlacklistReset();
+```
 
 ## Still Stuck?
 

@@ -7,6 +7,10 @@ export default defineConfig({
   ignoreDeadLinks: true,
   lastUpdated: true,
 
+  sitemap: {
+    hostname: 'https://glebtsereteli.github.io/GMRoomLoader/'
+  },
+
   title: "GMRoomLoader",
   description: "GMRoomLoader Documentation",
   head: [
