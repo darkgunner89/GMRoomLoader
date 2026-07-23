@@ -231,7 +231,8 @@ export default defineConfig({
         // Links
         'New Issue': 'https://github.com/glebtsereteli/GMRoomLoader/issues/new',
         'Debug Overlay': 'https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Debugging/The_Debug_Overlay.htm',
-        
+        'Instance Creation Order': 'https://manual.gamemaker.io/lts/en/The_Asset_Editors/Room_Properties/Room_Properties.htm#:~:text=to%20the%20room.-,Instance%20Creation%20Order,-The%20final%20button',
+
         'RoomLoader': '/pages/api/roomLoader/overview',
         'Origin': '/pages/api/roomLoader/origin',
         'Payload': '/pages/api/payload/overview',
