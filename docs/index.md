@@ -1,6 +1,9 @@
 ---
 
 layout: home
+title: GMRoomLoader Documentation
+titleTemplate: false
+description: Documentation for GMRoomLoader, an award-winning GameMaker library for making room prefabs and loading room contents at runtime.
 
 hero:
   name: "GMRoomLoader"
