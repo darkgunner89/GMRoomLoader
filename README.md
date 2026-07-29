@@ -29,7 +29,7 @@ bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmBoss);
 
 <table width="100%"><tr>
 <td width="45%"><img width="100%" src="https://github.com/user-attachments/assets/7441240b-dd80-4204-bf3d-4b6217f7747a"></td>
-<td width="55%"><img width="99%" src="https://github.com/user-attachments/assets/2e632263-25c9-47af-ac14-54302e1f0004"></td>
+<td width="55%"><img width="98%" src="https://github.com/user-attachments/assets/2e632263-25c9-47af-ac14-54302e1f0004"></td>
 </tr></table>
 
 # Use Cases
@@ -65,16 +65,6 @@ GMRoomLoader [won in the Best Tool category](https://gamemaker.io/en/blog/gamema
 # Tutorials
 - [Procedural Level Generation in GameMaker](https://www.youtube.com/watch?v=gUlcha0e7Hg) by [PixelatedPope](https://www.youtube.com/@PixelatedPope/), on the official [GameMaker](https://www.youtube.com/@GameMakerOfficial) YouTube channel. Jon builds a Spelunky-style procedural dungeon, carving a path of hand-crafted rooms loaded at runtime with GMRoomLoader.
 - [GMRoomLoader: Simultaneous Room Loading in GameMaker](https://www.youtube.com/watch?v=mZegvOC47dw) by [DragoniteSpam](https://dragonite.itch.io/). Michael introduces GMRoomLoader basics and goes over a few interesting edge cases.
-- More coming soon!
-
-# Credits
-- Created and maintained by [Gleb Tsereteli](https://twitter.com/glebtsereteli).
-- Logo by [neerikiffu](https://bsky.app/profile/neerikiffu.bsky.social).
-- Additional art and demo rooms designed by my wife [Kate](https://www.linkedin.com/in/kate-ivanova22/) ❣️
-- Originally motivated by and made for [TabularElf](https://tabelf.link/)'s [Cookbook Jam #1](https://itch.io/jam/cookbook-jam-1).
-- Thank you to [YellowAfterlife](https://yal.cc/) for inspiring this library with his OG [GMRoomPack](https://yellowafterlife.itch.io/gmroompack), various help and ideas.
-- Thank you to [Topher Anselmo](https://topheranselmo.com/) for inspiration and help with [VitePress](https://vitepress.dev/)-based documentation.
-- Demo art by [Kenney](https://kenney.nl) the ✨*Asset Jesus*✨.
 
 # Games Using GMRoomLoader
 - [Juju Adams](https://www.jujuadams.com/)' undisclosed [commercial games](https://www.reddit.com/r/gamemaker/comments/1nn84b9/comment/nfjy5v4/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
@@ -88,3 +78,12 @@ GMRoomLoader [won in the Best Tool category](https://gamemaker.io/en/blog/gamema
 - Project Reality: Shattered by BrewerTheGreater.
 
 And more to come! If you've built something with GMRoomLoader and would like it listed here, feel free to share it with me! 🙂
+
+# Credits
+- Created and maintained by [Gleb Tsereteli](https://twitter.com/glebtsereteli).
+- Logo by [neerikiffu](https://bsky.app/profile/neerikiffu.bsky.social).
+- Additional art and demo rooms designed by my wife [Kate](https://www.linkedin.com/in/kate-ivanova22/) ❣️
+- Originally motivated by and made for [TabularElf](https://tabelf.link/)'s [Cookbook Jam #1](https://itch.io/jam/cookbook-jam-1).
+- Thank you to [YellowAfterlife](https://yal.cc/) for inspiring this library with his OG [GMRoomPack](https://yellowafterlife.itch.io/gmroompack), various help and ideas.
+- Thank you to [Topher Anselmo](https://topheranselmo.com/) for inspiration and help with [VitePress](https://vitepress.dev/)-based documentation.
+- Demo art by [Kenney](https://kenney.nl) the ✨*Asset Jesus*✨.
