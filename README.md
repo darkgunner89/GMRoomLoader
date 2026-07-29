@@ -7,7 +7,7 @@
 
 <br/>
 
-GMRoomLoader is an award-winning [Free and Open Source](https://en.wikipedia.org/wiki/Free_and_open-source_software) GameMaker library that turns rooms into reusable building blocks by loading their contents into the current room at runtime.
+GMRoomLoader is an [award-winning](#gamemaker-awards), [Free and Open Source](https://en.wikipedia.org/wiki/Free_and_open-source_software) GameMaker library that turns rooms into reusable building blocks by loading their contents into the current room at runtime.
 
 Design levels across multiple rooms and combine them seamlessly during gameplay. Build procedural dungeons, chunked open worlds, endless runners, and more.
 
@@ -27,10 +27,9 @@ bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmBoss);
 - ℹ️ Refer to the [Documentation](https://glebtsereteli.github.io/GMRoomLoader/) for installation instructions, usage examples, and full API reference.
 - ℹ️ See the [Getting Started](https://glebtsereteli.github.io/GMRoomLoader/pages/home/gettingStarted/gettingStarted#getting-started) page to load your first room.
 
-<table align="center"><tr>
-<td><img src="https://github.com/user-attachments/assets/94fd173a-dc61-482d-bf14-3e7382e64fc5" height="300"></td>
-<td><img src="https://github.com/user-attachments/assets/7441240b-dd80-4204-bf3d-4b6217f7747a" height="300"></td>
-<td><img src="https://github.com/user-attachments/assets/6b422a9f-2e01-42b3-9c81-aaaae227d93f" height="300"></td>
+<table width="100%"><tr>
+<td width="45%"><img width="100%" src="https://github.com/user-attachments/assets/7441240b-dd80-4204-bf3d-4b6217f7747a"></td>
+<td width="55%"><img width="99%" src="https://github.com/user-attachments/assets/2e632263-25c9-47af-ac14-54302e1f0004"></td>
 </tr></table>
 
 # Use Cases
@@ -39,6 +38,11 @@ bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmBoss);
 - **Chunking**. Split your world into chunks and load or unload them dynamically as the player moves. Everything happens inside a single room, with no room transitions or loading screens.
 - **Stamp Pools**. Design multiple layouts for enemy encounters, NPC placements, or collectible layouts. Load from the pool at random to keep repetitive areas feeling varied.
 - **Screenshotting**. Capture screenshots of any room without ever visiting it, and use them for level select menus, building previews, or transition effects between rooms.
+
+<table align="center"><tr>
+<td><img src="https://github.com/user-attachments/assets/94fd173a-dc61-482d-bf14-3e7382e64fc5" height="300"></td>
+<td><img src="https://github.com/user-attachments/assets/6b422a9f-2e01-42b3-9c81-aaaae227d93f" height="300"></td>
+</tr></table>
 
 # Features
 - **Flexible Loading**. Load [Full Rooms](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/loading#load), [Instances](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/loading#loadinstances) or [Tilemaps](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/loading#loadtilemap) at any position in the current room - all with optional origin, scaling, mirroring, flipping and rotation.
@@ -57,6 +61,11 @@ GMRoomLoader [won in the Best Tool category](https://gamemaker.io/en/blog/gamema
 <td><a href="https://github.com/user-attachments/assets/751e1808-4738-4233-86ba-8d9a373ab2a8"><img src="https://github.com/user-attachments/assets/751e1808-4738-4233-86ba-8d9a373ab2a8" height="300"></a></td>
 <td><a href="https://github.com/user-attachments/assets/faea3207-85af-419b-b0fa-03e8f833dd57"><img src="https://github.com/user-attachments/assets/faea3207-85af-419b-b0fa-03e8f833dd57" height="300"></a></td>
 </tr></table>
+
+# Tutorials
+- [Procedural Level Generation in GameMaker](https://www.youtube.com/watch?v=gUlcha0e7Hg) by [PixelatedPope](https://www.youtube.com/@PixelatedPope/), on the official [GameMaker](https://www.youtube.com/@GameMakerOfficial) YouTube channel. Jon builds a Spelunky-style procedural dungeon, carving a path of hand-crafted rooms loaded at runtime with GMRoomLoader.
+- [GMRoomLoader: Simultaneous Room Loading in GameMaker](https://www.youtube.com/watch?v=mZegvOC47dw) by [DragoniteSpam](https://dragonite.itch.io/). Michael introduces GMRoomLoader basics and goes over a few interesting edge cases.
+- More coming soon!
 
 # Credits
 - Created and maintained by [Gleb Tsereteli](https://twitter.com/glebtsereteli).
@@ -79,7 +88,3 @@ GMRoomLoader [won in the Best Tool category](https://gamemaker.io/en/blog/gamema
 - Project Reality: Shattered by BrewerTheGreater.
 
 And more to come! If you've built something with GMRoomLoader and would like it listed here, feel free to share it with me! 🙂
-
-# Tutorials
-- [GMRoomLoader: Simultaneous Room Loading in GameMaker](https://www.youtube.com/watch?v=mZegvOC47dw) by [DragoniteSpam](https://dragonite.itch.io/). Michael introduces GMRoomLoader basics and goes over a few interesting edge cases.
-- More coming soon!
