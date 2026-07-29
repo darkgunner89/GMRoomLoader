@@ -27,10 +27,7 @@ bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmBoss);
 - ℹ️ Refer to the [Documentation](https://glebtsereteli.github.io/GMRoomLoader/) for installation instructions, usage examples, and full API reference.
 - ℹ️ See the [Getting Started](https://glebtsereteli.github.io/GMRoomLoader/pages/home/gettingStarted/gettingStarted#getting-started) page to load your first room.
 
-<table width="100%"><tr>
-<td width="45%"><img width="100%" src="https://github.com/user-attachments/assets/7441240b-dd80-4204-bf3d-4b6217f7747a"></td>
-<td width="55%"><img width="98%" src="https://github.com/user-attachments/assets/2e632263-25c9-47af-ac14-54302e1f0004"></td>
-</tr></table>
+<img width="1100" height="900" alt="generation" src="https://github.com/user-attachments/assets/a60fb03b-cdd3-477c-b848-1d10bd39f7c6" />
 
 # Use Cases
 
@@ -39,10 +36,7 @@ bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmBoss);
 - **Stamp Pools**. Design multiple layouts for enemy encounters, NPC placements, or collectible layouts. Load from the pool at random to keep repetitive areas feeling varied.
 - **Screenshotting**. Capture screenshots of any room without ever visiting it, and use them for level select menus, building previews, or transition effects between rooms.
 
-<table align="center"><tr>
-<td><img src="https://github.com/user-attachments/assets/94fd173a-dc61-482d-bf14-3e7382e64fc5" height="300"></td>
-<td><img src="https://github.com/user-attachments/assets/6b422a9f-2e01-42b3-9c81-aaaae227d93f" height="300"></td>
-</tr></table>
+<img width="800" height="800" alt="base" src="https://github.com/user-attachments/assets/1a2f8e25-b404-492d-8729-5317d3bba75a" />
 
 # Features
 - **Flexible Loading**. Load [Full Rooms](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/loading#load), [Instances](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/loading#loadinstances) or [Tilemaps](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/loading#loadtilemap) at any position in the current room - all with optional origin, scaling, mirroring, flipping and rotation.
@@ -52,6 +46,11 @@ bossPreview = RoomLoader.Tilemaps().Sprites().ScreenshotSprite(rmBoss);
 - **Fluent [State](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/state) Builder**. Configure optional arguments before loading or screenshotting in a simple, English-like flow.
 - **Easy Data Handling**. Initialize and remove data in multiple ways: [Single or Multiple](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/data#datainit), [Array](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/data#datainitarray), [Prefix](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/data#datainitprefix), [Tag](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/data#datainittag), or [All](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/data#datainitall). Retrieve core room info with [Getters](https://glebtsereteli.github.io/GMRoomLoader/pages/api/roomLoader/data#status-getters).
 - **Quick Debug Loading**. Load any room in the project at the mouse position with fully configurable parameters via the [Debug View](https://glebtsereteli.github.io/GMRoomLoader/pages/api/debugView/debugView) interface. Perfect for quick testing - no code required!
+
+<table align="center"><tr>
+<td><img src="https://github.com/user-attachments/assets/94fd173a-dc61-482d-bf14-3e7382e64fc5" height="300"></td>
+<td><img src="https://github.com/user-attachments/assets/6b422a9f-2e01-42b3-9c81-aaaae227d93f" height="300"></td>
+</tr></table>
 
 # GameMaker Awards!
 
